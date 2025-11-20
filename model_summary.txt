@@ -1,0 +1,40 @@
+======================================================================
+iFood Marketing Campaign Response - Random Forest Model
+======================================================================
+
+Dataset Overview:
+  Total samples: 2205
+  Training samples: 1764
+  Test samples: 441
+  Number of features: 37
+  Response rate: 15.10%
+
+Best Hyperparameters:
+  max_depth: None
+  max_features: sqrt
+  min_samples_leaf: 2
+  min_samples_split: 5
+  n_estimators: 200
+
+Performance Metrics (threshold 0.50):
+  Cross-validation ROC-AUC: 0.8931
+  Test Accuracy:            0.8753
+  Test ROC-AUC:             0.8834
+  Average Precision:        0.5736
+
+Cost-Sensitive Optimization:
+  Optimal Threshold:        0.10
+  Minimum Expected Cost:    $61,300
+  Confusion Matrix (TN, FP, FN, TP): 203, 171, 2, 65
+
+Top 10 Most Important Features:
+  Customer_Days: 0.1028
+  Recency: 0.1018
+  MntTotal: 0.0629
+  MntRegularProds: 0.0581
+  MntGoldProds: 0.0555
+  Income: 0.0538
+  MntMeatProducts: 0.0524
+  MntWines: 0.0458
+  AcceptedCmp3: 0.0402
+  NumStorePurchases: 0.0369
